@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidP_Workspace.iml" filepath="$PROJECT_DIR$/AndroidP_Workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FoodRecipes.iml" filepath="$PROJECT_DIR$/FoodRecipes.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
