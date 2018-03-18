@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -45,10 +47,24 @@ dependencies {
 
     kapt "android.arch.lifecycle:compiler:1.1.0"
 
+    //Dagger 2
+    compile "com.google.dagger:dagger:2.15"
+    kapt "com.google.dagger:dagger-compiler:2.15"
+
+    compile "com.google.dagger:dagger-android:2.15"
+    compile "com.google.dagger:dagger-android-support:2.15"
+    kapt "com.google.dagger:dagger-android-processor:2.15"
+    provided 'javax.annotation:jsr250-api:1.0'
+
+
     // Test helpers for LiveData
     testImplementation "android.arch.core:core-testing:1.1.0"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+kapt {
+    generateStubs = true
 }

@@ -1,4 +1,4 @@
-package com.rramprasad.foodrecipes
+package com.rramprasad.foodrecipes.home
 
 import com.google.gson.annotations.SerializedName
 

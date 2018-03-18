@@ -1,11 +1,11 @@
-package com.rramprasad.foodrecipes
+package com.rramprasad.foodrecipes.home
 
-import android.support.v4.app.FragmentActivity
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import com.rramprasad.foodrecipes.R
 import com.squareup.picasso.Picasso
 
 /**
@@ -20,7 +20,7 @@ class RecipesListAdapter(val mRecipesArrayList: ArrayList<Recipe>) : RecyclerVie
         return ViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder:ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val imageURL = mRecipesArrayList[position].imageURL
 
         if (imageURL.isNotEmpty())
