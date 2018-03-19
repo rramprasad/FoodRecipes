@@ -6,10 +6,10 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Module
-class FoodRecipesAppModule(val app : FoodRecipesApp) {
+class FoodRecipesAppModule {
 
-    @Provides
+    /*@Provides
     @Singleton
-    fun provideApp() = app
+    fun provideApp() = app*/
 
 }

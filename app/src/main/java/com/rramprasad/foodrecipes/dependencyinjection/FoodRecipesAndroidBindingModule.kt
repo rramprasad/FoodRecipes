@@ -16,7 +16,7 @@ import dagger.multibindings.IntoMap
 @Module
 abstract class FoodRecipesAndroidBindingModule {
 
-    @Binds
+    /*@Binds
     internal abstract fun bindContext(application: Application): Context
 
     //Bind ViewModel Factory
@@ -26,7 +26,7 @@ abstract class FoodRecipesAndroidBindingModule {
 
     //Bind MainActivity
     @ContributesAndroidInjector(modules = arrayOf(MainActivityModule::class))
-    internal abstract fun bindMainActivity(): MainActivity
+    internal abstract fun bindMainActivity(): MainActivity*/
 
     /*@Binds
     @IntoMap
