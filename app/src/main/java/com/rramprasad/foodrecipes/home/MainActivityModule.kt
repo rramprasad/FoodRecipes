@@ -1,5 +1,6 @@
 package com.rramprasad.foodrecipes.home
 
+import com.rramprasad.foodrecipes.dependencyinjection.ViewModelFactory
 import dagger.Module
 import dagger.Provides
 
@@ -13,4 +14,5 @@ class MainActivityModule{
     fun provideMainFragment(): MainFragment {
         return MainFragment.newInstance()
     }
+
 }

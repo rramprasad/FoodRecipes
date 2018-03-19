@@ -1,6 +1,7 @@
 package com.rramprasad.foodrecipes.dependencyinjection
 
 import android.app.Application
+import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
 import android.content.Context
@@ -16,24 +17,31 @@ import dagger.multibindings.IntoMap
 @Module
 abstract class FoodRecipesAndroidBindingModule {
 
-    /*@Binds
-    internal abstract fun bindContext(application: Application): Context
+    @Binds
+    abstract fun bindContext(application: Application): Context
 
     //Bind ViewModel Factory
     @Binds
-    internal abstract fun bindViewModelFactory(viewModelFactory: ViewModelFactory): ViewModelProvider.Factory
+    abstract fun bindViewModelFactory(viewModelFactory: ViewModelFactory): ViewModelProvider.Factory
 
 
+    /********************** MainActivity ******************************/
     //Bind MainActivity
     @ContributesAndroidInjector(modules = arrayOf(MainActivityModule::class))
-    internal abstract fun bindMainActivity(): MainActivity*/
+    abstract fun bindMainActivity(): MainActivity
 
-    /*@Binds
+    @Binds
     @IntoMap
     @ViewModelKey(MainViewModel::class)
-    internal abstract fun bindMainViewModel(userViewModel: MainViewModel): ViewModel
+    abstract fun bindMainViewModel(userViewModel: MainViewModel): MainViewModel
+
+
 
     //Bind MainFragment
     @ContributesAndroidInjector(modules = arrayOf(MainActivityModule::class))
-    internal abstract fun bindMainFragment(): MainFragment*/
+    abstract fun bindMainFragment(): MainFragment
+    /********************** MainActivity ******************************/
+
+
+
 }
