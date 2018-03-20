@@ -12,6 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.rramprasad.foodrecipes.*
 import com.rramprasad.foodrecipes.dependencyinjection.ViewModelFactory
+import dagger.android.support.AndroidSupportInjection
 import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_main.*
 import javax.inject.Inject
@@ -40,7 +41,7 @@ class MainFragment : DaggerFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        //AndroidSupportInjection.inject(this)
         mainViewModel = ViewModelProviders
                 .of(this,viewModelFactory)
                 .get(MainViewModel::class.java)

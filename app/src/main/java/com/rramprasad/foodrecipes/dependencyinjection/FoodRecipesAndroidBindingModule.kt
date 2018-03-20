@@ -33,7 +33,7 @@ abstract class FoodRecipesAndroidBindingModule {
     @Binds
     @IntoMap
     @ViewModelKey(MainViewModel::class)
-    abstract fun bindMainViewModel(userViewModel: MainViewModel): MainViewModel
+    abstract fun bindMainViewModel(mainViewModel: MainViewModel): ViewModel
 
 
 

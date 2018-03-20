@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATED_JAVA_ANNOTATION")
+
 package com.rramprasad.foodrecipes.dependencyinjection
 
 import android.arch.lifecycle.AndroidViewModel
@@ -8,7 +10,7 @@ import dagger.MapKey
 import java.lang.annotation.*
 import java.lang.annotation.Retention
 import java.lang.annotation.Target
-import kotlin.annotation.AnnotationTarget.PROPERTY_GETTER
+import kotlin.annotation.AnnotationTarget.*
 import kotlin.reflect.KClass
 
 /**
@@ -17,9 +19,11 @@ import kotlin.reflect.KClass
 
 
 @Documented
-//@Target(AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER)
+//@Target(FUNCTION, PROPERTY_GETTER, PROPERTY_SETTER)
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @MapKey
+@JvmSuppressWildcards
 annotation class ViewModelKey(val value: KClass<out ViewModel>)
 
 

@@ -6,7 +6,8 @@ import android.arch.lifecycle.MutableLiveData
 import dagger.Provides
 import javax.inject.Inject
 
-class MainViewModel : AndroidViewModel(Application()) {
+class MainViewModel @Inject constructor(): AndroidViewModel(Application()) {
+
 
     @Inject
     lateinit var recipeMutableLiveData : MutableLiveData<ArrayList<Recipe>>
