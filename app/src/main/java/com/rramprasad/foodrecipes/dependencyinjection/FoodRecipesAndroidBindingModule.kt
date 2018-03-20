@@ -27,7 +27,7 @@ abstract class FoodRecipesAndroidBindingModule {
 
     /********************** MainActivity ******************************/
     //Bind MainActivity
-    @ContributesAndroidInjector(modules = arrayOf(MainActivityModule::class))
+    @ContributesAndroidInjector(modules = [(MainActivityModule::class)])
     abstract fun bindMainActivity(): MainActivity
 
     @Binds
@@ -38,7 +38,7 @@ abstract class FoodRecipesAndroidBindingModule {
 
 
     //Bind MainFragment
-    @ContributesAndroidInjector(modules = arrayOf(MainActivityModule::class))
+    @ContributesAndroidInjector(modules = [(MainActivityModule::class)])
     abstract fun bindMainFragment(): MainFragment
     /********************** MainActivity ******************************/
 

@@ -10,11 +10,14 @@ class MainViewModel @Inject constructor(): AndroidViewModel(Application()) {
 
 
     @Inject
-    lateinit var recipeMutableLiveData : MutableLiveData<ArrayList<Recipe>>
+    lateinit var mutableiveData : MutableLiveData<String>
+
+    /*@Inject
+    lateinit var recipeMutableLiveData : MutableLiveData<ArrayList<Recipe>>*/
 
     fun loadRecipes() : MutableLiveData<ArrayList<Recipe>>{
 
-        val recipeIngredientArrayList = ArrayList<RecipeIngredient>()
+        /*val recipeIngredientArrayList = ArrayList<RecipeIngredient>()
         recipeIngredientArrayList.add(RecipeIngredient("Graham Cracker crumbs", "CUP", 2.0))
         recipeIngredientArrayList.add(RecipeIngredient("unsalted butter, melted", "TBLSP", 6.0))
         recipeIngredientArrayList.add(RecipeIngredient("granulated sugar", "CUP", 0.5))
@@ -30,7 +33,8 @@ class MainViewModel @Inject constructor(): AndroidViewModel(Application()) {
 
         recipeMutableLiveData.postValue(recipesArrayList)
 
-        return recipeMutableLiveData
+        return recipeMutableLiveData*/
+        return MutableLiveData()
     }
 
 }
