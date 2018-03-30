@@ -11,7 +11,6 @@ import javax.inject.Singleton
 @Module
 class FoodRecipesAppModule {
 
-
     /*@Provides
     fun provideMutableLiveData(): MutableLiveData<String> {
         return MutableLiveData()

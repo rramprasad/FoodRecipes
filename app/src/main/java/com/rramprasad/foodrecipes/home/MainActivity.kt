@@ -9,7 +9,7 @@ import javax.inject.Inject
 /*
  * Main Activity for Recipes list RecyclerView
  */
-class MainActivity : BaseActivity() {
+class MainActivity: BaseActivity() {
 
     @Inject
     lateinit var mainFragment : MainFragment

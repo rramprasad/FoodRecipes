@@ -20,7 +20,7 @@ import javax.inject.Inject
 /**
  * Created by Ramprasad
  */
-class MainFragment : DaggerFragment() {
+class MainFragment @Inject constructor(): DaggerFragment() {
 
     //var viewModelFactory : ViewModelFactory? = null
     @Inject

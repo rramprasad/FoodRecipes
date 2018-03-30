@@ -29,5 +29,5 @@ interface FoodRecipesAppComponent : AndroidInjector<DaggerApplication> {
         fun build(): FoodRecipesAppComponent
     }
 
-    override fun inject(instance: DaggerApplication?)
+    fun inject(instance: FoodRecipesApp?)
 }

@@ -10,7 +10,7 @@ class MainViewModel @Inject constructor(): AndroidViewModel(Application()) {
 
 
     @Inject
-    lateinit var mutableiveData : MutableLiveData<String>
+    lateinit var mutableLiveData : MutableLiveData<String>
 
     /*@Inject
     lateinit var recipeMutableLiveData : MutableLiveData<ArrayList<Recipe>>*/

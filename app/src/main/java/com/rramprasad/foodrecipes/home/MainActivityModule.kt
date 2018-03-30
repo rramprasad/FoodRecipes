@@ -5,15 +5,16 @@ import com.rramprasad.foodrecipes.dependencyinjection.ViewModelFactory
 import dagger.Module
 import dagger.Provides
 import javax.inject.Inject
+import javax.inject.Singleton
 
 /**
  * Created by Ramprasad
  */
 @Module
-internal class MainActivityModule{
+class MainActivityModule @Inject constructor(){
 
     @Provides
-    internal fun provideMainFragment(): MainFragment {
+    fun provideMainFragment(): MainFragment {
         return MainFragment.newInstance()
     }
 
@@ -23,7 +24,8 @@ internal class MainActivityModule{
     }*/
 
     @Provides
-    internal fun provideMutableLiveData(): MutableLiveData<String> {
+    @Singleton
+    fun provideMutableLiveData(): MutableLiveData<String> {
         return MutableLiveData()
     }
 
